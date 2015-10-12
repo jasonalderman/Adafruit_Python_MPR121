@@ -136,7 +136,7 @@ class MPR121(object):
         self._i2c_retry(self._device.write8, MPR121_NCLT, 0x00)
         self._i2c_retry(self._device.write8, MPR121_FDLT, 0x00)
         # Configure proximity sensing registers.
-        self._i2c_retry(self._device.write8, MPR121_PROX_MDHR, 0xFF)
+        self._i2c_retry(self._device.write8, MPR121_PROX_MHDR, 0xFF)
         self._i2c_retry(self._device.write8, MPR121_PROX_NHDAR, 0xFF)
         self._i2c_retry(self._device.write8, MPR121_PROX_NCLR, 0x00)
         self._i2c_retry(self._device.write8, MPR121_PROX_FDLR, 0x00)
